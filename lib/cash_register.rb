@@ -36,5 +36,6 @@ class CashRegister
     if @items== [] 
       @total=0.0
   end
+  @total
 end
 end
