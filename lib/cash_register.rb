@@ -10,7 +10,7 @@ class CashRegister
   def add_item(item, price, quantity = 0)
     @price = (price * quantity)
     @total += @price
-    quantity.times 
+    quantity.times {@items <<
   def apply_discount
     if @discount > 0
       @to_take_off = (price * discount)/100
